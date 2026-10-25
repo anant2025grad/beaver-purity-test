@@ -1,6 +1,8 @@
 
 "use client";
 
+import { trackEvent } from "@/lib/analytics";
+
 import {
   useRef,
   useState,
@@ -76,6 +78,7 @@ export default function ResultsPage() {
 
       document.body.appendChild(link);
       link.click();
+      trackEvent("result_card_downloaded");
       link.remove();
 
       setMessage("Your result card is ready.");
@@ -93,6 +96,7 @@ export default function ResultsPage() {
       );
 
       setMessage("Test link copied to clipboard.");
+      trackEvent("test_link_copied");
     } catch {
       setMessage("Unable to copy the link.");
     }

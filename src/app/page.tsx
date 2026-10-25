@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
-
+import { trackEvent } from "@/lib/analytics";
 import {
   sections,
   QUESTION_VERSION,
@@ -36,16 +36,18 @@ export default function TestPage() {
   }
 
   // Calculate the final score and navigate to results.
-  function calculateScore() {
+    function calculateScore() {
     const finalScore = calculatePurityScore(checkedCount);
 
     sessionStorage.setItem(
-      `bpt-result-v${QUESTION_VERSION}`,
-      String(finalScore)
+        `bpt-result-v${QUESTION_VERSION}`,
+        String(finalScore)
     );
 
+    trackEvent("test_completed");
+
     router.push("/results");
-  }
+    }
 
   // Clear all selected questions.
   function clearSelections() {
