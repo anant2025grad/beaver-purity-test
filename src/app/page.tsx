@@ -54,7 +54,7 @@ export default function TestPage() {
 
   return (
     <main className="custom-cursor-area min-h-screen bg-[#071426] text-[#F0F5FF]">
-      <div className="mx-auto max-w-4xl px-6 py-8 md:px-12">
+      <div className="mx-auto max-w-4xl px-4 py-5 sm:px-6 sm:py-8 md:px-12">
 
         {/* HEADER */}
         <header className="flex items-center justify-between border-b border-[#233C60] pb-6">
@@ -81,7 +81,7 @@ export default function TestPage() {
             some beavers are less innocent than others.
           </p>
 
-          <h1 className="text-5xl font-semibold leading-[0.95] tracking-[-0.07em] md:text-7xl">
+          <h1 className="text-[clamp(2.5rem,10vw,4.5rem)] font-semibold leading-[0.98] tracking-[-0.065em] md:text-7xl">
             the beaver
             <br />
             purity test.
@@ -153,7 +153,7 @@ export default function TestPage() {
                 return (
                   <label
                     key={question.id}
-                    className="group flex cursor-pointer items-center gap-5 border-b border-[#233C60]/70 py-5 transition-colors hover:bg-[#102541]/50"
+                    className="group flex min-h-[64px] cursor-pointer items-center gap-3 border-b border-[#233C60]/70 py-4 transition-colors active:bg-[#102541]/70 sm:gap-5 sm:py-5 sm:hover:bg-[#102541]/50"
                   >
                     {/* QUESTION NUMBER */}
                     <span className="w-7 shrink-0 text-xs tabular-nums text-[#6684A8]">
@@ -183,7 +183,7 @@ export default function TestPage() {
 
                     <span
                       aria-hidden="true"
-                      className={`flex h-6 w-6 shrink-0 items-center justify-center border transition-all duration-200 group-focus-within:ring-2 group-focus-within:ring-[#5B9DFF] group-focus-within:ring-offset-2 group-focus-within:ring-offset-[#071426] ${
+                      className={`flex h-7 w-7 shrink-0 items-center justify-center border transition-all duration-200 sm:h-6 sm:w-6 group-focus-within:ring-2 group-focus-within:ring-[#5B9DFF] group-focus-within:ring-offset-2 group-focus-within:ring-offset-[#071426] ${
                         checked
                           ? "border-[#5B9DFF] bg-[#5B9DFF] text-[#071426]"
                           : "border-[#456180] bg-transparent"
@@ -239,7 +239,7 @@ export default function TestPage() {
           {/* CALCULATE BUTTON */}
           <button
             onClick={calculateScore}
-            className="group flex w-full items-center justify-between bg-[#F0F5FF] px-7 py-6 text-xs font-semibold uppercase tracking-[0.15em] text-[#071426] transition-colors hover:bg-[#5B9DFF]"
+            className="group flex min-h-[60px] w-full items-center justify-between gap-4 bg-[#F0F5FF] px-5 py-5 text-left text-xs font-semibold uppercase tracking-[0.12em] text-[#071426] transition-colors active:bg-[#5B9DFF] sm:px-7 sm:py-6 sm:tracking-[0.15em] sm:hover:bg-[#5B9DFF]"
           >
             Calculate My Purity Score
 
