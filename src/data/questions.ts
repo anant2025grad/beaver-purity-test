@@ -14,7 +14,7 @@ export type QuestionSection = {
 const sectionData = [
   {
     id: "academics",
-    title: "academic crimes.",
+    title: "academic crimes",
     subtitle: "college is all about the degree, right?",
     questions: [
       "Skipped class simply because you didn't feel like going.",
@@ -36,7 +36,7 @@ const sectionData = [
   },
   {
     id: "campus",
-    title: "beaver campus life.",
+    title: "beaver campus life",
     subtitle: "with a campus this small, everyone knows everything.",
     questions: [
       "Gone to a campus event exclusively for the free food.",
@@ -58,7 +58,7 @@ const sectionData = [
   },
   {
     id: "harmony",
-    title: "harmony hall.",
+    title: "harmony hall",
     subtitle: "what happens in harmony hall...",
     questions: [
       "Lived in Harmony Hall.",
@@ -80,7 +80,7 @@ const sectionData = [
   },
   {
     id: "relationships",
-    title: "public relations.",
+    title: "public relations",
     subtitle: "things can get complicated.",
     questions: [
       "Had a crush on someone in your class.",
@@ -129,8 +129,8 @@ const sectionData = [
   },
   {
     id: "unholy",
-    title: "the unholy beaver.",
-    subtitle: "You've made it this far. Good luck.",
+    title: "the unholy beaver",
+    subtitle: "you've made it this far. good luck.",
     questions: [
       "Had a one-night stand.",
       "Had a consensual hookup with another Penn State Beaver student.",
