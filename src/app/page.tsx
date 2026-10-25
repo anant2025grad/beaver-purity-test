@@ -263,6 +263,12 @@ export default function TestPage() {
             There are no right or wrong answers.
           </p>
         </section>
+        <p className="mb-6 text-center text-[11px] leading-6 text-[#6684A8]">
+            We collect anonymous website engagement statistics,
+            such as visits and completed tests.
+            Your individual answers and purity score are never
+            sent to our analytics services.
+        </p>
 
         {/* FOOTER */}
         <footer className="border-t border-[#233C60] py-8 text-center text-[10px] uppercase tracking-[0.15em] text-[#6684A8]">
