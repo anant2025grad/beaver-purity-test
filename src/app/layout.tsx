@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import CustomCursor from "@/components/CustomCursor";
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/next";
+
 export const metadata: Metadata = {
   title: "Beaver Purity Test",
   description:
@@ -19,6 +21,7 @@ export default function RootLayout({
       <body>
         <CustomCursor />
         {children}
+        <Analytics />
       </body>
     </html>
   );
