@@ -1,0 +1,59 @@
+
+@import "tailwindcss";
+
+:root {
+  --background: #071426;
+  --foreground: #f0f5ff;
+  --muted: #91a8c7;
+  --accent: #5b9dff;
+  --surface: #102541;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #5b9dff;
+  color: #071426;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body:has(.custom-cursor-area) .custom-cursor-area,
+  body:has(.custom-cursor-area) .custom-cursor-area a,
+  body:has(.custom-cursor-area) .custom-cursor-area button {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .custom-cursor-area,
+  .custom-cursor-area a,
+  .custom-cursor-area button {
+    cursor: auto !important;
+  }
+}
