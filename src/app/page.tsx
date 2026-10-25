@@ -86,7 +86,7 @@ export default function TestPage() {
           <h1 className="text-[clamp(2.5rem,10vw,4.5rem)] font-semibold leading-[0.98] tracking-[-0.065em] md:text-7xl">
             the beaver
             <br />
-            purity test.
+            purity test
             <span className="text-[#5B9DFF]">.</span>
           </h1>
 
@@ -206,37 +206,6 @@ export default function TestPage() {
 
         {/* SCORE SUBMISSION */}
         <section className="border-t border-[#233C60] py-14">
-
-          <div className="mb-8 flex items-end justify-between">
-            <div>
-              <p className="mb-2 text-[10px] uppercase tracking-[0.2em] text-[#91A8C7]">
-                Experiences Checked
-              </p>
-
-              <p className="text-4xl font-semibold tracking-tight">
-                {checkedCount}
-                <span className="text-lg text-[#6684A8]">
-                  {" "}/ {totalQuestions}
-                </span>
-              </p>
-            </div>
-
-            <p className="text-xs text-[#91A8C7]">
-              {Math.round(progress)}% selected
-            </p>
-          </div>
-
-          {/* PROGRESS BAR */}
-          <div className="mb-10 h-[3px] overflow-hidden bg-[#233C60]">
-            <motion.div
-              className="h-full bg-[#5B9DFF]"
-              animate={{ width: `${progress}%` }}
-              transition={{
-                duration: 0.25,
-                ease: "easeOut",
-              }}
-            />
-          </div>
 
           {/* CALCULATE BUTTON */}
           <button
