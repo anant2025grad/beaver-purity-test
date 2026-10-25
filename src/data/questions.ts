@@ -137,7 +137,7 @@ const sectionData = [
       "Hooked up with someone you knew for less than 24 hours.",
       "Hooked up with someone you said was just a friend.",
       "Hooked up with someone you later regretted getting involved with.",
-      "Hooked up with someone on campus outside of Harmony Hall.",
+      "Hooked up with a non-Beaver student on campus.",
       "Had an intimate encounter on campus outside a dorm.",
       "Kept a hookup secret from mutual friends.",
       "Hooked up with someone and then avoided them around campus.",
